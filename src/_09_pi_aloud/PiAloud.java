@@ -13,22 +13,28 @@ public static void main(String[] args) {
 	
 
 	// 2. Make a String variable to hold the value of Pi. You could use http://www.piday.org/million/ for the value.
-String pi = " ";
+String pi = "3.14159265358979323846264 ";
 	// 3. Print out some digits of Pi. The first value is "pi.charAt(0)", the second is "pi.charAt(1)"
-System.out.println("3.14159265358");
-
-
+System.out.println(pi.charAt(0)) ;
+System.out.println(pi.charAt(5)) ;
+System.out.println(pi.charAt(11)) ;
 	// 4. Print ALL the digits of of Pi (hint: use a loop)
-for (int i = 0; i < pi.charAt(10); i++) {
-	
-}
+for (int i = 0; i < pi.length(); i++) {
+	System.out.println(pi.charAt(i));
 	// 5. Use the speak() method to speak all the digits of Pi.
-
+speak(pi.charAt(i));
 	// [ADVANCED]
 	// *6. Get a character from the user using the getInputFromUser() method
+char input = getInputFromUser( );
 	// *7. Compare the users' char to the next digit of Pi
-	// *8. If they are correct, print out "correct". If they are not, print "incorrect" to System.err.println
+if ( input == pi.charAt(i) ) {
+	System.out.println("correct!");
+}else {
+	System.out.println("incorrect!");
 }
+	// *8. If they are correct, print out "correct". If they are not, print "incorrect" to System.err.println
+
+}}
 	static void speak(char characterToSpeak) {
 		try {
 			Runtime.getRuntime().exec("say " + characterToSpeak).waitFor();
