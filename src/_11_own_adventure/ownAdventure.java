@@ -74,10 +74,15 @@ if((backup)==0)
 	NightwingandRobin();
 }if((backup)==1)
 {
-	Batman();
+	Batman2();
 }
 
 }
-
+static void NightwingandRobin() {
+	JOptionPane.showMessageDialog(null, "Nightwing and Robin arrive as soon as you call. The two villians don't make it very far and the three of you split up and take them down before they can cause trouble. Bat-Family for the win!");
+	}
+	static void Batman2() {
+	JOptionPane.showMessageDialog(null, "Batman gets your call for help and goes to get the Batmobile. He is greeted with a surprise, The Penguin has stoled the Batmobile and frees everyone else at Arkham. You lost this time.");
+	}
 
 }
